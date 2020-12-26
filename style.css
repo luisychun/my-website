@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap');
+
+/* CSS Variable */
+:root {
+    --primary-color: #848e98;
+    --secondary-color: #ece5ca;
+    --dark-color: #000;
+    --light-color: #fff;
+    --border-color: #ffbc00;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    height: 100%;
+    overflow-x: hidden;
+}
+
+span {
+    display: inline-block;
+}
+
+.header-span {
+    color: var(--border-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Spectral', serif;
+    ;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+}
+
+.fas {
+    padding-bottom: 0.4rem;
+    color: var(--border-color);
+}
+
+.bg-grey {
+    background-color: #f4f4f4;
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 3rem;
+    background: var(--border-color);
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.ls-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.ls-header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    width: 100vw;
+    background: url("img/header-bg.jpg") no-repeat center right/cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.ls-header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--dark-color);
+    opacity: 0.85;
+}
+
+.ls-header-content {
+    color: var(--light-color);
+    font-size: 1.4rem;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.ls-header-content h1 {
+    margin-bottom: 1rem;
+}
+
+#ls-icon-animated {
+    font-size: 42px;
+    color: var(--border-color);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.ls-banner {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+.ls-about {
+    font-size: 1.2rem;
+}
+
+.ls-about-bio {
+    flex: 2;
+}
+
+.ls-portfolio {
+    min-height: 100%;
+    width: 100vw;
+    background-color: var(--light-color);
+}
+
+.card {
+    /* width: 18rem; */
+    margin: 0 auto;
+    /* background-color: #f4f4f4; */
+}
+
+.card-body {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-text {
+    height: 160px;
+}
+
+.ls-counter {
+    font-family: 'Karla', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 3.5px;
+    display: flex;
+    z-index: 2;
+}
+
+.ls-counter div {
+    min-width: 20%;
+    padding: 25px;
+    border: 2px solid #fdfeff;
+    border-radius: 8px;
+    opacity: 0.75;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.ls-counter span {
+    display: block;
+    font-size: 1rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+.fab {
+    margin: 5px;
+    color: #4f5b66;
+}
+
+button.resume-click-control {
+    font-size: 1.5rem;
+    color: #333;
+    width: 100%;
+}
+
+.btn-link:hover {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+.card-body ul {
+    padding: 0 !important;
+}
+
+/* Media Query */
+
+@media(max-width:350px) {
+    .ls-header h1 {
+        font-size: 2rem;
+    }
+
+    .ls-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .ls-header p {
+        font-size: 1rem;
+    }
+
+    .ls-about h2 {
+        font-size: 1.5rem;
+    }
+
+    .ls-about p {
+        font-size: 1rem;
+    }
+
+    .ls-about-text {
+        padding: 0 !important;
+    }
+
+    .ls-counter div {
+        padding: 5px !important;
+    }
+}
+
+@media(max-width:365px) {
+    button.resume-click-control {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:360px) {
+    .ls-logo-list i {
+        font-size: 2.5em !important;
+    }
+
+    .card {
+        /* width: 12rem !important; */
+    }
+
+    .card-body {
+        font-size: .75rem !important;
+    }
+
+    .ls-contact i {
+        font-size: 2em;
+    }
+}
+
+@media(max-width:412px) {
+    body {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+    }
+
+    .ls-about-profile-holder img {
+        height: 225px;
+    }
+
+    .card-text {
+        text-align: left;
+        height: 200px !important;
+    }
+}
+
+@media(max-width:468px) {
+    .ls-logo-list i {
+        font-size: 3em;
+    }
+}
+
+@media(max-width:768px) {
+    .ls-header {
+        text-align: left;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:780px) {
+    .ls-porfolio-holder {
+        height: 382px !important;
+    }
+
+    .ls-about-desc {
+        text-align: left !important;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 1rem !important;
+    }
+
+    .ls-about img {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .ls-contact ul {
+        padding-left: 0;
+    }
+
+    .ls-header-content {
+        font-size: 20px;
+        line-height: 0.8;
+        letter-spacing: 1.5px;
+    }
+
+    .ls-counter div {
+        padding: 10px;
+    }
+}
+
+@media(max-width:960px) {
+    .ls-header {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .ls-services-text {
+        text-align: center;
+    }
+
+    .ls-services-list img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+
+@media(max-width: 1010px) {
+    .card {
+        /* width: 14rem; */
+    }
+
+    .card-body {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:1000px) {
+    .ls-about-profile-holder img {
+        max-width: 80%;
+        margin: 0px auto;
+    }
+
+    .ls-about-bio h4 {
+        text-align: center;
+    }
+
+    .ls-portfolio-products {
+        text-align: center;
+    }
+
+    .ls-porfolio-holder {
+        margin: 0px auto;
+    }
+
+    #return-to-top {
+        display: none !important;
+    }
+}
+
+/* Scroll up animation */
+
+#scroll-to-top {
+    z-index: 999;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#scroll-to-top i {
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+    left: 18px;
+    top: 12px;
+    font-size: 25px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#scroll-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#scroll-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
