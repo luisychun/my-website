@@ -2,8 +2,6 @@
 
 /* CSS Variable */
 :root {
-    --primary-color: #848e98;
-    --secondary-color: #ece5ca;
     --dark-color: #000;
     --light-color: #fff;
     --border-color: #ffbc00;
@@ -52,7 +50,7 @@ p {
 }
 
 .bg-light {
-    background-color: #fff;
+    background-color: var(--light-color);
 }
 
 .bottom-line {
@@ -129,10 +127,6 @@ p {
     font-size: 1.2rem;
 }
 
-.ls-about-bio {
-    flex: 2;
-}
-
 .ls-portfolio {
     min-height: 100%;
     width: 100vw;
@@ -147,7 +141,7 @@ p {
 
 .card-body {
     font-size: 1.2rem;
-    color: #333;
+    color: var(--dark-color);
 }
 
 .card-text {
