@@ -267,13 +267,18 @@ button.resume-click-control {
 
     .card-text {
         text-align: left;
-        height: 200px !important;
+        height: inherit !important;
+        font-size: 18px;
     }
 }
 
 @media(max-width:468px) {
     .ls-logo-list i {
         font-size: 3em;
+    }
+
+    p.header-text {
+        line-height: 1.5rem;
     }
 }
 
@@ -316,6 +321,10 @@ button.resume-click-control {
 
     .ls-counter div {
         padding: 10px;
+    }
+
+    .btn-dark {
+        margin-top: 20px;
     }
 }
 
