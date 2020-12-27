@@ -30,7 +30,7 @@ Vue.component('ls-portfolio-showcase', {
     data () {
         return {
             portfolioList: [
-                {projectName: 'My Personal Website', projectDesc: 'Yes. What you see now is the first website that I built from scratch. I uses Bootstrap 4 in this project, and included Vue from CDN to maintain this Porfolio section. Hosted on Netlify.', projectStack: ['fab fa-html5 fa-2x', 'fab fa-css3-alt fa-2x', 'fab fa-vuejs fa-2x'], projectUrl: '', projectImprovement: 'Plan to refactor this website into a fully Nuxt.js CMS, and add a custom domain to it.'},
+                {projectName: 'My Personal Website', projectDesc: 'Yes. What you see now is the first website that I built from scratch. I uses Bootstrap 4 in this project, and included Vue from CDN to maintain this Porfolio section. Hosted on Netlify.', projectStack: ['fab fa-html5 fa-2x', 'fab fa-css3-alt fa-2x', 'fab fa-vuejs fa-2x'], projectUrl: 'https://github.com/luisychun/my-website', projectImprovement: 'Plan to refactor this website into a fully Nuxt.js CMS, and add a custom domain to it.'},
 
                 {projectName: 'AirAsia ticket Scraper', projectDesc: 'A terminal based program for web scraping against AirAsia flight tickets. Chrome web driver will be trigger and capture the ticket price based on the departure code and date from user input, and output the result in CSV file.', projectUrl: 'https://github.com/luisychun/aa-flight-ticket-scraper', projectStack: ['fab fa-python fa-2x'], projectImprovement:"Output slots can be dynamics based on the available flight slots as current output slot is fixed with 9 slots which is not flexible enough."},
 
