@@ -18,7 +18,7 @@ Vue.component('ls-portfolio-showcase', {
                                     <p v-show="showImprovement">What can be improved?</p>
                                     <div v-show="showImprovement" class="bottom-line"></div>
                                     <p v-show="showImprovement" class="card-text">{{portfolio.projectImprovement}}</p>
-                                    <a :href="portfolio.projectUrl" target="_blank" class="btn btn-dark">Visit site</a>
+                                    <a :href="portfolio.projectUrl" target="_blank" class="btn btn-dark shadow-none">Visit site</a>
                                 </div>
                             </div>
                         </div>
