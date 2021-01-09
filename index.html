@@ -15,8 +15,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,10 +23,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-calendar/2.2.6/github-calendar.min.css" integrity="sha512-AtESchk5fBh4hn2AyU4KISMsrO/7WutTTZm69sealBszHHqZeosB/exm6CGd0jhYEz8tNF/bOLt8VPG3zvpHZw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-calendar/2.2.6/github-calendar-responsive.min.css" integrity="sha512-j0ZQtgrDVwcDYPbEEOMNEBPsY6iwYKIM7OM7OdSIToCYbhiJ27229Rr+sqGwehwGd5kPL1PC1gemvnhxFUP8MA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <title>LUISYC | HOME</title>
+    <title>LuisyC | Web Developer | Software Engineer | Singapore | Johor Bahru</title>
 </head>
 
 <body>
+    
     <a href="javascript:" id="scroll-to-top">
         <i class="fas fa-angle-up"></i>
     </a>
@@ -38,7 +38,7 @@
         <div class="ls-header-overlay"></div>
         <div class="ls-header-content">
             <h1>Hola Amigo, I Am Luis</h1>
-            <h2>I specialized in <span class="header-span">Web Development</span> and <span class="header-span">Digital Marketing</span></h2>
+            <h2>I specialized in <span class="header-span font-weight-bold">Web Development</span> and <span class="header-span font-weight-bold">Digital Marketing</span></h2>
             <p class="header-text">Glad you're here :) keep scrolling for a little about me</p>            
             <p id="ls-icon-animated" class="fa"></p>
         </div>
@@ -65,8 +65,9 @@
                     <div class="ls-about-text p-3 m-3 text-left text-xl-center">                        
                         <p>Hi! My name is Luis Hau Yong Chun, 26 years old and graduated from University Malaysia Sarawak, major in Network Computing. Besides from computer network, I have strong passionate in web development and I spent most of my time to build my web development skill through self learning from online tutorial such as Pluralsight and Udemy. Apart from that, I also spent my time to learn stock and investment.</p>                        
                     </div>
-                    <div class="text-center">
-                        <a href="docs/Hau_Yong_Chun_Resume.pdf" target="_blank" class="btn btn-dark text-center" download>Download My Resume</a>
+                    <div class="text-center" style="position: relative;">
+                        <div class="svg" id="svg"></div>
+                        <a href="docs/Hau_Yong_Chun_Resume.pdf" target="_blank" class="btn btn-dark text-center" style="box-shadow: none;" id="resume-btn" download>Download My Resume</a>
                     </div>                    
                 </div>
             </div>
@@ -80,9 +81,9 @@
                 <div class="col-12">
                     <h2>WHAT I'M INTERESTED IN</h2>
                     <div class="bottom-line"></div>
-                </div>                
+                </div>
             </div>
-        </div>
+          </div>        
     </section>
 
     <!-- interest section -->
@@ -150,15 +151,16 @@
     <!-- banner -->
     <section class="ls-banner" id="ls-about-banner">
         <div class="container-fluid">
-            <div class="row d-flex justify-content-center text-center">
+            <div class="row justify-content-center text-center">
                 <div class="col-12">
-                    <h2>PORTFOLIOS</h2>
+                    <h2>PORTFOLIO</h2>
                     <div class="bottom-line"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- portfolio section -->
     <section class="ls-portfolio p-5">
         <div class="container">
             <div class="row justify-content-center text-center" id="ls-portfolio-component">
@@ -166,9 +168,9 @@
                 <ls-portfolio-showcase></ls-portfolio-showcase>
             </div>
         </div>
-    </section>
-    <!-- end portfolio section -->
+    </section>    
 
+    <!-- countdown clock section -->
     <section class="p-5 bg-light">
         <div class="container">
             <div class="row justify-content-center">
@@ -178,16 +180,13 @@
                 <div class="col-12 d-flex justify-content-center my-2">
                     <div class="ls-counter my-md-5"></div>
                 </div>
-
-                <script src="counter.js"></script>
-                <!-- Couter Javascript -->
             </div>
             <div class="row d-none d-lg-flex">
                 <div class="calendar"></div>
             </div>
         </div>
     </section>
-
+    
     <!-- banner -->
     <section class="ls-banner" id="ls-about-banner">
         <div class="container-fluid">
@@ -200,6 +199,7 @@
         </div>
     </section>
 
+    <!-- footer section -->
     <footer class="ls-contact my-5">
         <div id="footer-contact" class="container">
             <div class="row d-flex">
@@ -216,11 +216,11 @@
                                 <i class="fab fa-instagram fa-4x"></i>
                             </a>
                         </div>
-                        <!-- <div>
-                            <a href="https://www.linkedin.com/in/yong-chun-hau-0012a9158/" target="_blank">
+                        <div>
+                            <a href="https://www.linkedin.com/in/yong-chun-hau-20ab36202/" target="_blank">
                                 <i class="fab fa-linkedin fa-4x"></i>
                             </a>
-                        </div> -->
+                        </div>
                         <div>
                             <a href="https://twitter.com/luis_ychun" target="_blank">
                                 <i class="fab fa-twitter fa-4x"></i>
@@ -243,43 +243,9 @@
         </div>
         </div>
     </footer>
-    <!-- end footer section -->
-    <script src="main.js"></script>
 
-    <!--Start of Tawk.to Script-->
-    <!-- <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5ac18ccbd7591465c70919e3/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script> -->
-    <!--End of Tawk.to Script-->
-
-    <!-- WhatsHelp.io widget -->
-    <!-- <script type="text/javascript">
-        (function () {
-            var options = {
-                whatsapp: "60167481683", // WhatsApp number
-                email: "yongchun1683@gmail.com", // Email
-                company_logo_url: "//static.whatshelp.io/img/flag.png", // URL of company logo (png, jpg, gif)
-                greeting_message: "Hello, how may we help you? Just send us a message now to get assistance.", // Text of greeting message
-                call_to_action: "Contact me", // Call to action
-                button_color: "#666666", // Color of button
-                position: "left", // Position may be 'right' or 'left'
-                order: "whatsapp,email", // Order of buttons
-            };
-            var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-        })();
-    </script> -->
-    <!-- /WhatsHelp.io widget -->
+    <!-- Scripts section -->
+    <script src="portfolio.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/github-calendar/2.2.6/github-calendar.min.js" integrity="sha512-MT+vWGxhKz3AZ1/8d/moEWWIdNhjSWtRDVl2g0k2lGeGfXrfgyPFap//EIb9AZdKYKRaZbaEFCQ2sbIgOJJkLw==" crossorigin="anonymous"></script>
 
@@ -330,6 +296,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
+    <script src="lottie.js"></script>
+    <script src="counter.js"></script>    
+    
 </body>
 </html>

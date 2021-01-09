@@ -30,9 +30,9 @@ Vue.component('ls-portfolio-showcase', {
     data () {
         return {
             portfolioList: [
-                {projectName: 'My Personal Website', projectDesc: 'Yes. What you see now is the first website that I built from scratch. I uses Bootstrap 4 in this project, and included Vue from CDN to maintain this Porfolio section. Hosted on Netlify.', projectUrl: 'https://github.com/luisychun/my-website', projectStack: ['fab fa-html5 fa-2x', 'fab fa-css3-alt fa-2x', 'fab fa-vuejs fa-2x'], projectImprovement: 'Plan to refactor this website into a fully Nuxt.js CMS, and add a custom domain to it.'},
+                {projectName: 'My Personal Website', projectDesc: 'Yes. What you see now is the first website that I built from scratch. I uses Bootstrap 4 in this project, and included Vue from CDN to maintain this Porfolio section. Hosted on Netlify.', projectUrl: 'https://github.com/luisychun/my-website', projectStack: ['fab fa-html5 fa-2x', 'fab fa-css3-alt fa-2x', 'fab fa-vuejs fa-2x'], projectImprovement: ''},
 
-                {projectName: 'AirAsia ticket Scraper', projectDesc: 'A terminal based program for web scraping against AirAsia flight tickets. Chrome web driver will be trigger and capture the ticket price based on the departure code and date from user input, and output the result in CSV file.', projectUrl: 'https://github.com/luisychun/aa-flight-ticket-scraper', projectStack: ['fab fa-python fa-2x'], projectImprovement:"Output slots can be dynamics based on the available flight slots as current output slot is fixed with 9 slots which is not flexible enough."},
+                {projectName: 'AirAsia ticket Scraper', projectDesc: 'A terminal based program for web scraping against AirAsia flight tickets. Chrome web driver will be trigger and capture the ticket price based on the departure code and date from user input, and output the result in CSV file.', projectUrl: 'https://github.com/luisychun/aa-flight-ticket-scraper', projectStack: ['fab fa-python fa-2x'], projectImprovement:''},
 
                 {projectName: 'Malaysia Covid-19 Case Dashboard', projectDesc: 'A Vue application that shown updated daily confirmed, death, recovered Covid-19 cases in Malaysia. Data sources are get from JHU CSSE. Hosted on GitHub pages.', projectUrl: 'https://luisychun.github.io/malaysia-covid19-local-case/', projectStack: ['fab fa-html5 fa-2x', 'fab fa-css3-alt fa-2x', 'fab fa-vuejs fa-2x'], projectImprovement: ''},
 
@@ -42,14 +42,14 @@ Vue.component('ls-portfolio-showcase', {
 
                 {projectName: 'Emergency Notification Hybrid App', projectDesc: 'A hybrid app that used to send an emergency notification to notify linked family members or friends. Built with Ionic, Firestore, and Firebase Cloud Messaging.', projectUrl: 'https://github.com/luisychun/emergency-notification-app', projectStack: ['fab fa-html5 fa-2x', 'fab fa-css3-alt fa-2x', 'fab fa-angular fa-2x'], projectImprovement: ''},
 
-                {projectName: 'Lai Kee DimSum Singapore', projectDesc: 'Lai Kee Dim Sum is best known for their quality hand made dim sum. We help them to built a website to display the company history, food menu and uses the Google Maps API to shows all the outlets in store locator page.', projectUrl: 'https://laikeedimsum.com/', projectStack: ['fab fa-css3-alt fa-2x', 'fab fa-wordpress fa-2x'], projectImprovement: ''},
+                {projectName: 'Lai Kee DimSum Singapore', projectDesc: 'Lai Kee Dim Sum is best known for their quality hand made dim sum. We help them to built a website to display the company history, food menu and uses the Google Maps API to shows all the outlets in store locator page.', projectUrl: 'https://laikeedimsum.com/', projectStack: ['fab fa-wordpress fa-2x'], projectImprovement: ''},
             ],
             showImprovement: false
         }
     }
 })
 
-var app = new Vue({
+const app = new Vue({
     el: '#ls-portfolio-component',
     data: {}
 })
