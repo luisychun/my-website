@@ -2,7 +2,7 @@
 
 /* CSS Variable */
 :root {
-    --dark-color: #000;
+    --dark-color: #111;
     --light-color: #fff;
     --border-color: #ffbc00;
 }
@@ -18,6 +18,65 @@ body {
     background-color: var(--light-color);
     height: 100%;
     overflow-x: hidden;
+}
+
+.ls-header-showcase {
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    z-index: 2;
+}
+
+.ls-header-showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+}
+
+.ls-header-logo {
+    position: absolute;
+    top: 3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 2000;
+    color: var(--light-color);
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.ls-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.6);
+    mix-blend-mode: overlay;
+
+}
+
+.ls-header-text {
+    position: relative;
+    z-index: 10;
 }
 
 span {
@@ -68,10 +127,10 @@ p {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1200px;
     padding-left: 1rem;
     padding-right: 1rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .ls-header-bg {
@@ -93,8 +152,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--dark-color);
-    opacity: 0.85;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .ls-header-content {
@@ -113,6 +171,8 @@ p {
     color: var(--border-color);
     margin-top: 10px;
     cursor: pointer;
+    position: absolute;
+    bottom: 30px;
 }
 
 .ls-banner {

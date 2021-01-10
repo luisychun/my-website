@@ -34,13 +34,17 @@
 
     <!-- header section -->
     <header class="ls-header container">
-        <div class="ls-header-bg"></div>
+        <h2 class="ls-header-logo">Luis <span class="header-span font-weight-bold">yC</span></h2>
+        <video src="./img/video-bg-sd.mp4" muted loop autoplay></video>
+        <!-- <div class="ls-header-bg"></div> -->
         <div class="ls-header-overlay"></div>
         <div class="ls-header-content">
             <h1>Hola Amigo, I Am Luis</h1>
             <h2>I specialized in <span class="header-span font-weight-bold">Web Development</span> and <span class="header-span font-weight-bold">Digital Marketing</span></h2>
-            <p class="header-text">Glad you're here :) keep scrolling for a little about me</p>            
-            <p id="ls-icon-animated" class="fa"></p>
+            <p class="header-text">Glad you're here :) keep scrolling for a little about me</p>
+            <div class="d-flex justify-content-center">
+                <p id="ls-icon-animated" class="fa"></p>
+            </div>
         </div>
     </header>
 
@@ -90,7 +94,7 @@
     <section class="ls-interest">
         <div class="container-fluid p-0 bg-grey">
             <div class="row no-gutters justify-content-center text-left text-sm-center p-md-5 p-0">
-                <div class="col-12 col-xl-3 p-4 p-md-5">
+                <div class="col-12 col-xl-3 p-4 p-md-5 bg-light">
                     <i class="fas fa-pen-alt fa-3x"></i>
                     <h4>Prototyping</h4>
                     <div class="bottom-line d-none d-md-block"></div>
@@ -102,7 +106,7 @@
                     <div class="bottom-line d-none d-md-block"></div>
                     <p>Managed everything that users visually see in their application and all the operations behind the scenes. I have gained strong passionate on this development tread since my University when I first approach to the web development course in 2017.</p>
                 </div>
-                <div class="col-12 col-xl-3 p-4 p-md-5">
+                <div class="col-12 col-xl-3 p-4 p-md-5 bg-light">
                     <i class="fas fa-server fa-3x"></i>
                     <h4>Infrastructure</h4>
                     <div class="bottom-line d-none d-md-block"></div>
@@ -162,7 +166,7 @@
 
     <!-- portfolio section -->
     <section class="ls-portfolio p-5">
-        <div class="container">
+        <div class="container" style="max-width: 960px;">
             <div class="row justify-content-center text-center" id="ls-portfolio-component">
                 <h2 class="text-center pb-3">Check out some of my mini projects</h2>
                 <ls-portfolio-showcase></ls-portfolio-showcase>

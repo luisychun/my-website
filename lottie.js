@@ -8,6 +8,6 @@ const animItem = bodymovin.loadAnimation({
     path: 'https://assets9.lottiefiles.com/packages/lf20_u4yrau.json'
 })
 
-btn.addEventListener('click', ()=>{  
+btn.addEventListener('mouseenter', ()=>{  
   animItem.goToAndPlay(0, true)
 })
