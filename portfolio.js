@@ -43,6 +43,8 @@ Vue.component('ls-portfolio-showcase', {
                 {projectName: 'Emergency Notification Hybrid App', projectDesc: 'A hybrid app that used to send an emergency notification to notify linked family members or friends. Built with Ionic, Firestore, and Firebase Cloud Messaging.', projectUrl: 'https://github.com/luisychun/emergency-notification-app', projectStack: ['fab fa-html5 fa-2x', 'fab fa-css3-alt fa-2x', 'fab fa-angular fa-2x'], projectImprovement: ''},
 
                 {projectName: 'Lai Kee DimSum Singapore', projectDesc: 'Lai Kee Dim Sum is best known for their quality hand made dim sum. We help them to built a website to display the company history, food menu and uses the Google Maps API to shows all the outlets in store locator page.', projectUrl: 'https://laikeedimsum.com/', projectStack: ['fab fa-wordpress fa-2x'], projectImprovement: ''},
+
+                {projectName: 'Symbol Stock News Finder', projectDesc: 'A simple React application to retrieve symbol and stock market related news. Integrated with FinnHub API for data retrieving. Hosted on Netlify.', projectUrl: 'https://stocknewsfinder.netlify.app/', projectStack: ['fab fa-html5 fa-2x', 'fab fa-css3-alt fa-2x', 'fab fa-react fa-2x'], projectImprovement: ''},
             ],
             showImprovement: false
         }
