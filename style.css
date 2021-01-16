@@ -46,7 +46,7 @@ a {
 
 .fas {
     padding-bottom: 0.4rem;
-    color: var(--border-color);
+    /* color: var(--border-color); */
 }
 
 .container {
@@ -71,6 +71,14 @@ a {
     height: 2px;
     width: 3rem;
     background: var(--border-color);
+    display: block;
+    margin: 0 auto;
+}
+
+.bottom-line-dark {
+    height: 2px;
+    width: 3rem;
+    background: #111;
     display: block;
     margin: 0 auto;
 }
@@ -247,6 +255,18 @@ video {
 
 .card-text {
     height: 160px;
+}
+
+.portfolio-svg {
+    filter: invert(36%) sepia(14%) saturate(566%) hue-rotate(167deg) brightness(87%) contrast(83%);
+    height: 1.5em;
+    padding: 0 5px;
+}
+
+.portfolio-svg:hover {
+    filter: invert(0%) sepia(16%) saturate(5539%) hue-rotate(12deg) brightness(79%) contrast(87%);
+    height: 1.5em;
+    padding: 0 5px;
 }
 
 .ls-counter {
