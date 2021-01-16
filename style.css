@@ -393,8 +393,9 @@ footer {
         letter-spacing: 1.5px;
     }
 
-    .ls-about-text {
-        font-size: 1em;
+    .ls-about-text p {
+        font-size: 1rem;
+        line-height: 1.3em;
     }
 
     .ls-about-profile-holder img {
