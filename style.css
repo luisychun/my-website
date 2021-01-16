@@ -246,7 +246,9 @@ video {
 
 .card {
     margin: 0 auto;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 }
+
 
 .card-body {
     font-size: 1.2rem;
@@ -329,6 +331,10 @@ button.resume-click-control {
     pointer-events: none;
 }
 
+footer {
+    width: 100vw;
+}
+
 /* Media Query */
 
 @media(max-width:350px) {
@@ -369,7 +375,7 @@ button.resume-click-control {
 
 @media(max-width:360px) {
     .ls-logo-list i {
-        font-size: 2.5em !important;
+        font-size: 2em !important;
     }
 
     .card-body {
@@ -387,6 +393,10 @@ button.resume-click-control {
         letter-spacing: 1.5px;
     }
 
+    .ls-about-text {
+        font-size: 1em;
+    }
+
     .ls-about-profile-holder img {
         height: 225px;
     }
@@ -394,7 +404,7 @@ button.resume-click-control {
     .card-text {
         text-align: left;
         height: inherit !important;
-        font-size: 18px;
+        /* font-size: 18px; */
     }
 }
 

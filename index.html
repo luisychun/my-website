@@ -41,7 +41,7 @@
             <h1 class="ls-header-h1"><span class="header-span font-weight-bold">Hola</span> Amigo, I Am Luis.</h1>            
             <h2 class="ls-header-h2">I specialized in <span class="header-span font-weight-bold">Web Development</span> and <span class="header-span font-weight-bold">Digital Marketing</span>.</h2>
             <p class="header-text">Glad you're here :) keep scrolling for a little about me.</p>
-            <div class="d-sm-none d-md-flex justify-content-center">
+            <div class="d-none d-lg-flex justify-content-center">
                 <div class='icon-scroll'></div>
                 <!-- <p id="ls-icon-animated" class="fa"></p> -->
             </div>
@@ -66,12 +66,12 @@
     </section>
 
     <!-- About -->
-    <section class="ls-about py-5 py-md-3">
+    <section class="ls-about py-1 py-lg-3">
         <div class="container mt-2 mb-2">
             <div class="row justify-content-center">                
-                <div class="col-md-10 col-md-offset-2 text-left">
-                    <div class="ls-about-text p-3 m-3">
-                        <h2 class="pb-3">Let me tell you about myself</h2>
+                <div class="col-12 col-md-10 col-md-offset-2 text-left">
+                    <div class="ls-about-text p-1 m-1 p-lg-3 m-lg-3">
+                        <h2 class="pb-1 pb-lg-3">Let me tell you about myself</h2>
                         <p>Hi there! I'm Luis, a software developer based in Malaysia and Singapore. I graduated in 2019 from University Malaysia Sarawak, major Network Computing.</p>
                         <p>Shortly after graduating, I first joined Infenion Tech as a software engineer and responsible in project coordination, analysis, design, implementation and support for turnkey ERP system.</p>
                         <p>I'm passionate in web and application development. I spent most of my time to build my web development skill through self learning from online resources such as Pluralsight and Udemy.</p>                                                
@@ -211,41 +211,40 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="ls-contact my-5">
-        <div id="footer-contact" class="container">
-            <div class="row d-flex">
-                <div class="col-12 d-flex justify-content-center flex-wrap">
-                    <h6 class="w-100 text-center py-2">"I can't sleep because I have internet connection."</h6>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <a href="https://en-gb.facebook.com/people/Luis-YChun/100001225879357" target="_blank">
-                                <i class="fab fa-facebook-square fa-4x"></i>
-                            </a>
+    <!-- Form -->
+    <section class="ls-contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3 class="my-3">If you have any questions, just drop me a message :)</h3>
+                    <form class="p-4" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
+                        <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required name="email">
                         </div>
-                        <div>
-                            <a href="https://www.linkedin.com/in/yong-chun-hau-20ab36202/" target="_blank">
-                                <i class="fab fa-linkedin fa-4x"></i>
-                            </a>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required name="name">
+                          </div>
+                        <div class="form-group">
+                            <label for="textarea">Message</label>
+                            <textarea class="form-control" id="textarea" rows="3" style="resize: none;" required name="message"></textarea>
                         </div>
-                        <div>
-                            <a href="https://github.com/luisychun" target="_blank">
-                                <i class="fab fa-github fa-4x"></i>
-                            </a>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div class="col-12 ls-contact-title text-center my-3 ">
-                    <p><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by luisyc | 2021</p>
-                </div>
-                <div class="col-12 text-center mb-2">
-                    <img src="https://www.netlify.com/img/deploy/button.svg" alt="">
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                      </form>
                 </div>
             </div>
         </div>
         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light-grey p-2">
+        <div class="col-12 ls-contact-title text-center my-3 ">
+            <p><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by luisyc | 2021</p>
+        </div>
+        <div class="col-12 text-center mb-2">
+            <img src="https://www.netlify.com/img/deploy/button.svg" alt="">
     </footer>
 
     <!-- Scripts section -->
