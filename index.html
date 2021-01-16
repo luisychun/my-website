@@ -27,28 +27,33 @@
 </head>
 
 <body>
-    
+    <!-- Scroll to top icon -->
     <a href="javascript:" id="scroll-to-top">
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- header section -->
+    <!-- Header -->
     <header class="ls-header container">
         <h2 class="ls-header-logo">Luis <span class="header-span font-weight-bold">yC</span></h2>
-        <video src="./img/video-bg-sd.mp4" muted loop autoplay playsinline></video>
-        <!-- <div class="ls-header-bg"></div> -->
-        <div class="ls-header-overlay"></div>
+        <video src="./img/video-bg-sd.mp4" muted loop autoplay playsinline></video>        
+        <div class="ls-video-overlay"></div>
         <div class="ls-header-content">
-            <h1 class="ls-header-h1">Hola Amigo, I Am Luis</h1>
-            <h2 class="ls-header-h2">I specialized in <span class="header-span font-weight-bold">Web Development</span> and <span class="header-span font-weight-bold">Digital Marketing</span></h2>
-            <p class="header-text">Glad you're here :) keep scrolling for a little about me</p>
-            <div class="d-flex justify-content-center d-xs-none">
-                <p id="ls-icon-animated" class="fa"></p>
+            <h1 class="ls-header-h1"><span class="header-span font-weight-bold">Hola</span> Amigo, I Am Luis.</h1>            
+            <h2 class="ls-header-h2">I specialized in <span class="header-span font-weight-bold">Web Development</span> and <span class="header-span font-weight-bold">Digital Marketing</span>.</h2>
+            <p class="header-text">Glad you're here :) keep scrolling for a little about me.</p>
+            <div class="d-sm-none d-md-flex justify-content-center">
+                <div class='icon-scroll'></div>
+                <!-- <p id="ls-icon-animated" class="fa"></p> -->
+            </div>
+            <div class="d-flex">
+                <a href="https://en-gb.facebook.com/people/Luis-YChun/100001225879357" target="_blank"><img src="img/facebook.svg" alt="" class="header-svg"></a>
+                <a href="https://www.linkedin.com/in/luis-yong-chun-hau-20ab36202" target="_blank"><img src="img/linkedin.svg" alt="" class="header-svg"></a>
+                <a href="https://github.com/luisychun" target="_blank"><img src="img/github.svg" alt="" class="header-svg"></a>
             </div>
         </div>
     </header>
 
-    <!-- banner -->
+    <!-- Banner -->
     <section class="ls-banner" id="ls-about-banner">
         <div class="container-fluid">
             <div class="row justify-content-center text-center">
@@ -60,25 +65,28 @@
         </div>
     </section>
 
-    <!-- about section -->
-    <section class="ls-about my-5 my-md-3">
-        <div class="container-fluid mt-5 mb-5">
-            <h2 class="text-center pb-3">Let me tell you about myself</h2>
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-5">
-                    <div class="ls-about-text p-3 m-3 text-left text-xl-center">                        
-                        <p>Hi! My name is Luis Hau Yong Chun, 26 years old and graduated from University Malaysia Sarawak, major in Network Computing. Besides from computer network, I have strong passionate in web development and I spent most of my time to build my web development skill through self learning from online tutorial such as Pluralsight and Udemy. Apart from that, I also spent my time to learn stock and investment.</p>                        
+    <!-- About -->
+    <section class="ls-about py-5 py-md-3">
+        <div class="container mt-2 mb-2">
+            <div class="row justify-content-center">                
+                <div class="col-md-10 col-md-offset-2 text-left">
+                    <div class="ls-about-text p-3 m-3">
+                        <h2 class="pb-3">Let me tell you about myself</h2>
+                        <p>Hi there! I'm Luis, a software developer based in Malaysia and Singapore. I graduated in 2019 from University Malaysia Sarawak, major Network Computing.</p>
+                        <p>Shortly after graduating, I first joined Infenion Tech as a software engineer and responsible in project coordination, analysis, design, implementation and support for turnkey ERP system.</p>
+                        <p>I'm passionate in web and application development. I spent most of my time to build my web development skill through self learning from online resources such as Pluralsight and Udemy.</p>                                                
                     </div>
-                    <div class="text-center" style="position: relative;">
+                    <!-- Resume -->
+                    <!-- <div class="text-center" style="position: relative;">
                         <div class="svg" id="svg"></div>
                         <a href="docs/Hau_Yong_Chun_Resume.pdf" target="_blank" class="btn btn-dark text-center" style="box-shadow: none;" id="resume-btn">View My Resume</a>
-                    </div>                    
+                    </div>-->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- banner -->
+    <!-- Banner -->
     <section class="ls-banner" id="ls-about-banner">
         <div class="container-fluid">
             <div class="row justify-content-center text-center">
@@ -90,7 +98,7 @@
           </div>        
     </section>
 
-    <!-- interest section -->
+    <!-- Interest -->
     <section class="ls-interest">
         <div class="container-fluid p-0 bg-grey">
             <div class="row no-gutters justify-content-center text-left text-sm-center p-md-5 p-0">
@@ -100,7 +108,7 @@
                     <div class="bottom-line d-none d-md-block"></div>
                     <p>Implement the idea from paper to digital form. In this approach, customer is able to get the first impression on how's final product will look like. Adobe XD is the first choice of mine.</p>
                 </div>
-                <div class="col-12 col-xl-3 p-4 p-md-5">
+                <div class="col-12 col-xl-3 p-4 p-md-5 bg-light-grey ">
                     <i class="fas fa-desktop fa-3x"></i>
                     <h4>Full Stack</h4>
                     <div class="bottom-line d-none d-md-block"></div>
@@ -112,7 +120,7 @@
                     <div class="bottom-line d-none d-md-block"></div>
                     <p>Cloud, 5G, Docker, Kubernetes, JAMStack... Those technologies are getting more and more popular, and I believe that this is the future tread, the traditional treads are gonna to be replace in the future.</p>
                 </div>
-                <div class="col-12 col-xl-3 p-4 p-md-5">
+                <div class="col-12 col-xl-3 p-4 p-md-5 bg-light-grey ">
                     <i class="fas fa-ad fa-3x"></i>
                     <h4>Digital Marketing</h4>
                     <div class="bottom-line d-none d-md-block"></div>
@@ -258,8 +266,10 @@
         $(window).scroll(function () {
             if ($(this).scrollTop() >= 220) {
                 $('#scroll-to-top').fadeIn(200);
+                $('.icon-scroll').fadeOut(200);
             } else {
                 $('#scroll-to-top').fadeOut(200);
+                $('.icon-scroll').fadeIn(200);
             }
         });
         $('#scroll-to-top').click(function () {
@@ -271,18 +281,18 @@
 
     <script>
         /* Animate icon */
-        function iconChange() {
-            let icon = document.getElementById('ls-icon-animated');
-            icon.innerHTML = "&#xf107;";
+        // function iconChange() {
+        //     let icon = document.getElementById('ls-icon-animated');
+        //     icon.innerHTML = "&#xf107;";
 
-            setTimeout(function () {
-                icon.innerHTML = "&#xf103;";
-            }, 1500);
-        }
+        //     setTimeout(function () {
+        //         icon.innerHTML = "&#xf103;";
+        //     }, 1500);
+        // }
 
-        iconChange();
+        // iconChange();
 
-        setInterval(iconChange, 3000);
+        // setInterval(iconChange, 3000);
 
         /* Click and scroll to about section */
         $("#ls-icon-animated").click(function () {
@@ -300,8 +310,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
-    <script src="lottie.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
+    <script src="lottie.js"></script> -->
     <script src="counter.js"></script>    
     
 </body>
