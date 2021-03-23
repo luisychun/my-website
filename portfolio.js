@@ -56,8 +56,7 @@ Vue.component('ls-portfolio-showcase', {
           projectName: 'Malaysia Covid-19 Case Dashboard',
           projectDesc:
             'A Vue application that capture updated daily confirmed, death, recovered Covid-19 cases in Malaysia. Data sources are get from JHU CSSE.',
-          projectUrl:
-            'https://luisychun.github.io/malaysia-covid19-local-case/',
+          projectUrl: 'https://luisychun.github.io/mys-covid-local-case/',
           projectStack: [
             'img/tech/html5.svg',
             'img/tech/css3.svg',
