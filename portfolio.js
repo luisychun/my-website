@@ -115,8 +115,8 @@ Vue.component('ls-portfolio-showcase', {
           projectImprovement: '',
         },
         {
-          projectName: `Cheerio crawler for Malaysia's Covid data`,
-          projectDesc: `Apify's cheerio crawler for local use. Get the latest updated Covid data from Malaysia's official MOH and DG health website.`,
+          projectName: `Cheerio scraper for Malaysia's Covid case`,
+          projectDesc: `Cheerio crawler to get latest number of Covid case from Malaysia's official MOH and DG health website.`,
           projectUrl:
             'https://github.com/luisychun/apify-cheerio-crawler-msia-covid',
           projectStack: ['img/tech/node-dot-js.svg', 'img/tech/jquery.svg'],
